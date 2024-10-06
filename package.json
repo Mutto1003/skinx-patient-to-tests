@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "codeceptjs": "^3.6.7"
+    "codeceptjs": "^3.6.7",
+    "dotenv": "^16.4.5",
+    "webdriverio": "^8.6.3"
   },
   "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
     "@types/node": "^22.7.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
