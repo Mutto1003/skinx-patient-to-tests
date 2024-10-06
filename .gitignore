@@ -1,6 +1,7 @@
 # Gradle files
 node_modules/
 app-alpha-release.apk
+allure-results/
 # .gradle/
 # build/
 
