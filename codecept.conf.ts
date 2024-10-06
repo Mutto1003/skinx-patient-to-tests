@@ -16,6 +16,8 @@ export const config: CodeceptJS.MainConfig = {
       outputDir: 'output/allure-results',
       disableWebdriverLogs: true,
       enableScreenshots: true,
+      enabled: true,
+      require: '@codeceptjs/allure-legacy',
     },
   },
   output: './output',
@@ -50,11 +52,8 @@ export const config: CodeceptJS.MainConfig = {
   },
   include: {
     I: './steps_file',
-
     loginPage: "./pages/login.ts",
-
     registerPage: "./pages/register.ts",
-
     examplePage: "./services/example.ts",
   },
   name: 'skinx-patient-to-tests'

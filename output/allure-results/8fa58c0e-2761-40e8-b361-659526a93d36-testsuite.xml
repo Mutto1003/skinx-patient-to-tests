@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1728183397999' stop='1728183399428'>
+    <name>apiLogin:</name>
+    <title>apiLogin:</title>
+    <test-cases>
+        <test-case start='1728183398011' status='passed' stop='1728183399425'>
+            <name>@api test something</name>
+            <title>@api test something</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@api'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1728183398023' status='passed' stop='1728183399410'>
+                    <name>I send get request "/api/productsList"</name>
+                    <title>I send get request "/api/productsList"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

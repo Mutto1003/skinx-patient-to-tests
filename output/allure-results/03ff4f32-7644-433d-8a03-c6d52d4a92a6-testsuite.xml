@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1728183355695' stop='1728183387229'>
+    <name>mobile:</name>
+    <title>mobile:</title>
+    <test-cases>
+        <test-case start='1728183355699' status='passed' stop='1728183386013'>
+            <name>@app test something</name>
+            <title>@app test something</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+                <label name='tag' value='@app'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1728183374794' status='passed' stop='1728183379804'>
+                    <name>I wait 5</name>
+                    <title>I wait 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1728183379806' status='passed' stop='1728183380503'>
+                    <name>I see element {"xpath":"//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']"}</name>
+                    <title>I see element {"xpath":"//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1728183380504' status='passed' stop='1728183380776'>
+                    <name>I tap {"xpath":"//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']"}</name>
+                    <title>I tap {"xpath":"//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']"}</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1728183380777' status='passed' stop='1728183381991'>
+                    <name>I see element "~contact-support"</name>
+                    <title>I see element "~contact-support"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1728183381991' status='passed' stop='1728183383008'>
+                    <name>I tap "~contact-support"</name>
+                    <title>I tap "~contact-support"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1728183383008' status='passed' stop='1728183386012'>
+                    <name>I wait 3</name>
+                    <title>I wait 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,5 +1,6 @@
 # Gradle files
 node_modules/
+app-alpha-release.apk
 # .gradle/
 # build/
 

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "TEST_TYPE=app npx codeceptjs run ./tests/ui/*_test.ts  --grep '@app'",
+    "api": "TEST_TYPE=api npx codeceptjs run ./tests/api/*_test.ts  --grep '@api'"
   },
   "keywords": [],
   "author": "",
