@@ -8,6 +8,7 @@
 - Node.js >= 14.x
 - npm >= 6.x
 - Start appium
+- Start emulator android
 
 ### Steps
 1. Clone the repository:
@@ -31,7 +32,20 @@
 - 
 
 ## Project Structure
-skinx-patient-to-tests/
+- **apk/**: ไฟล์ APK ที่ใช้สำหรับการทดสอบแอปพลิเคชัน
+- **fixtures/**: ข้อมูลทดสอบที่สามารถใช้งานซ้ำได้ในหลายสถานการณ์
+- **locales/**: การจัดการการแสดงผลหลายภาษา เช่น ภาษาไทยและภาษาอังกฤษ
+- **output/**: เก็บผลลัพธ์ที่ได้จากการทดสอบต่างๆ
+- **pages/**: สคริปต์ที่ใช้สำหรับทดสอบหน้าต่างๆ ใน UI ของแอป
+- **services/**: ลอจิกที่เกี่ยวกับการเรียก API หรือฟังก์ชันการทำงาน
+- **tests/**: โฟลเดอร์สำหรับเก็บไฟล์ทดสอบ ทั้งในส่วนของ UI และ API
+- **.gitignore**: ไฟล์ที่บอก Git ว่าควรเพิกเฉยไฟล์หรือโฟลเดอร์ใดบ้าง
+- **codecept.conf.ts**: การตั้งค่าสำหรับการทดสอบด้วย CodeceptJS
+- **package.json** และ **package-lock.json**: ข้อมูลเกี่ยวกับ dependencies และสคริปต์ของโปรเจกต์
+- **tsconfig.json**: การตั้งค่าที่เกี่ยวกับ TypeScript
+- **README.md**: เอกสารประกอบโปรเจกต์ที่อธิบายวิธีการใช้งานและโครงสร้างต่างๆ
+
+<!-- skinx-patient-to-tests/
 │
 ├── apk/                        # ไฟล์ APK สำหรับการทดสอบแอปพลิเคชัน
 │   └── app-alpha-release.apk   # ไฟล์ APK ที่ใช้สำหรับการทดสอบ release
@@ -64,4 +78,4 @@ skinx-patient-to-tests/
 ├── package.json                # ข้อมูล dependencies และสคริปต์ของโปรเจกต์
 ├── package-lock.json           # ข้อมูล dependencies ที่ถูกล็อคเวอร์ชันไว้
 ├── tsconfig.json               # การตั้งค่าสำหรับ TypeScript
-└── README.md                   # เอกสารประกอบโปรเจกต์
+└── README.md                   # เอกสารประกอบโปรเจกต์ -->
