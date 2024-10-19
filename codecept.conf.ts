@@ -28,7 +28,17 @@ export const config: CodeceptJS.MainConfig = {
     // JSONResponse: {}
     ...(process.env.TEST_TYPE === 'api' ? {
       REST: {
-        endpoint: 'https://automationexercise.com',
+        endpoint: 'https://api.patient.alpha.skinx.app',
+        defaultHeaders: {
+          // use Bearer Authorization
+          // 'Authorization': 'Bearer 11111',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'User-Agent': '(dart:io)',
+          'app-platform': 'ios',
+          'app-version': '3.0.0',
+          'app-device': '1234',
+        },
         onRequest: (request) => {
           request.headers['Content-Type'] = 'application/json';
         },
@@ -55,6 +65,12 @@ export const config: CodeceptJS.MainConfig = {
     loginPage: "./pages/login.ts",
     registerPage: "./pages/register.ts",
     examplePage: "./services/example.ts",
+
+    login_verify_otpPage: "./services/login_verify_otp.ts",
+
+    apiLoginVerifyOtpPage: "./services/apiLoginVerifyOtp.ts",
+
+    commonPage: "./services/common.ts",
   },
   name: 'skinx-patient-to-tests'
 }

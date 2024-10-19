@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "app": "TEST_TYPE=app npx codeceptjs run ./tests/ui/*_test.ts  --grep '@app'",
-    "api": "TEST_TYPE=api npx codeceptjs run ./tests/api/*_test.ts  --grep '@api'"
+    "api": "TEST_TYPE=api npx codeceptjs run ./tests/api/login/loginVerifyOtp.ts  --grep '@api'"
   },
   "keywords": [],
   "author": "",
