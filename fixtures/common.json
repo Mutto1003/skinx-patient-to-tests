@@ -1,0 +1,23 @@
+{
+    "endpoint": {
+        "login": {
+            "loginVerifyOtp": "/login/verifyOtp",
+            "loginRequestOtp": "/login/requestOtp?phone="
+        },
+        "order": {
+            "orderCharge": "/order/charge",
+            "orderCreate": "/order/create"
+        }
+    },
+    "request": {
+        "header": {
+            "Authorization": "Bearer {{AccessToken}}",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "(dart:io)",
+            "app-platform": "ios",
+            "app-version": "3.0.0",
+            "app-device": "1234"
+        }
+    }
+}

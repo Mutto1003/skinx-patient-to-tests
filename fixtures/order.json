@@ -1,0 +1,48 @@
+{
+    "orderCreate": {
+        "customerName": "ปณิธาน บุญร้อง",
+        "customerTelNo": "+66995033561",
+        "orderType": "STORE",
+        "productItems": [
+            {
+                "sku": "2807020490_TH-17434909343",
+                "nameTr": {
+                    "en": "MAYBELLINE SUPERSTAY MATTE INK",
+                    "th": "เมย์เบลลีน ซุปเปอร์สเตย์ แมทอิ้งค์ ลิควิดลิปสติก5มล.ลิปจูบไม่หลุด16ชม."
+                },
+                "descriptionTr": {
+                    "en": "130 Self-Starter",
+                    "th": "130 Self-Starter"
+                },
+                "quantity": 1,
+                "tagPrice": 219.0,
+                "sellingPrice": 185.0,
+                "canExpress": false
+            }
+        ],
+        "procedureItems": [],
+        "shippingFee": 25.0,
+        "shippingFeeDiscount": 0.0,
+        "shippingType": "NORMAL",
+        "shippingProviderId": 1,
+        "recipient": "test",
+        "shippingAddress": "3",
+        "shippingTelNo": "0995033561",
+        "subDistrict": "คลองท่อมเหนือ",
+        "subDistrictKey": "Khlong Thom Nuea",
+        "district": "คลองท่อม",
+        "districtKey": "Khlong Thom",
+        "province": "กระบี่",
+        "provinceKey": "Krabi",
+        "postcode": "81120"
+    },
+
+    "orderCharge": {
+        "id": "{{orderId}}",
+        "payment": {
+            "paymentMethod": "PROMPTPAY",
+            "cardId": null,
+            "cardToken": null
+        } 
+    }
+}

@@ -5,6 +5,7 @@ import {
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
+require('dotenv').config({ path: `./env/.env.${process.env.NODE_ENV}` });
 
 // enable all common plugins https://github.com/codeceptjs/configure#setcommonplugins
 setCommonPlugins();
@@ -28,7 +29,7 @@ export const config: CodeceptJS.MainConfig = {
     // JSONResponse: {}
     ...(process.env.TEST_TYPE === 'api' ? {
       REST: {
-        endpoint: 'https://api.patient.alpha.skinx.app',
+        endpoint: process.env.BASE_URL,
         defaultHeaders: {
           // use Bearer Authorization
           // 'Authorization': 'Bearer 11111',
