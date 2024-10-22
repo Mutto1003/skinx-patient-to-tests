@@ -38,9 +38,9 @@
     },
 
     "orderCharge": {
-        "id": "{{orderId}}",
+        "id": "{{ORDERID}}",
         "payment": {
-            "paymentMethod": "PROMPTPAY",
+            "paymentMethod": "{{PROMPTPAY}}",
             "cardId": null,
             "cardToken": null
         } 
